@@ -14,7 +14,8 @@ class EstudanteController extends Controller
      */
     public function index()
     {
-        //
+        $estudantes = Estudante::all();
+        return view('estudante.index', ['estudantes' => $estudantes]);
     }
 
     /**
@@ -46,7 +47,7 @@ class EstudanteController extends Controller
      */
     public function show(Estudante $estudante)
     {
-        //
+        return view('estudante.show', ['estudante' => $estudante]);
     }
 
     /**

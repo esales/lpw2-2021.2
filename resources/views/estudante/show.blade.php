@@ -1,0 +1,1 @@
+<h1>{{ $estudante->getNome() }}</h1>
